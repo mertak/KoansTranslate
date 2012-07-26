@@ -9,7 +9,7 @@ rescue LoadError
 end
 
 # --------------------------------------------------------------------
-# Support code for the Ruby Koans.
+# Ruby Koans için destekleyici kod.
 # --------------------------------------------------------------------
 
 class FillMeInError < StandardError
@@ -92,7 +92,7 @@ module EdgeCase
   end
 
   module Color
-    #shamelessly stolen (and modified) from redgreen
+    #redgreen'den utanmaksızın çalınmıştır(ve düzenlendi).
     COLORS = {
       :clear   => 0,  :black   => 30, :red   => 31,
       :green   => 32, :yellow  => 33, :blue  => 34,
@@ -296,7 +296,7 @@ ENDTEXT
       puts "Üstad diyor ki:"
       puts Color.cyan("Hala aydınlanmaya çalışıyorsun.  ")
       if ((recents = progress.last(5)) && recents.size == 5 && recents.uniq.size == 1)
-        puts Color.cyan(" Yine hüsran yine hüsran. Yardım istemekten çekinme.")
+        puts Color.cyan("Hata yapmak da bir öğrenme biçimidir. Yardım istemekten çekinme.")
       elsif progress.last(2).size == 2 && progress.last(2).uniq.size == 1
         puts Color.cyan(" Umudunu kaybetme.")
       elsif progress.last.to_i > 0
@@ -440,12 +440,12 @@ ENDTEXT
         end
       end
 
-      # Lazy initialize list of subclasses
+      # Alt sınıfları tembelce tanımlıyor
       def subclasses
         @subclasses ||= []
       end
 
-       # Lazy initialize list of test methods.
+       # Test metodlarını tembelce tanımlıyor.
       def testmethods
         @test_methods ||= []
       end
