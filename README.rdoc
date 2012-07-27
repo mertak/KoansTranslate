@@ -23,7 +23,8 @@ make it work correctly.
 == Ruby yükleme
 
 Eğer Ruby kurulum dosyanız yoksa daha ayrıntılı yönlendirmeler için:
- http://ruby-lang.org/en/downloads/ . Koans çalıştırmak için ruby ve rake'e ihtiyacın 
+ http://ruby-lang.org/en/downloads/ .
+Koans çalıştırmak için ruby ve rake'e ihtiyacın 
 olacak. Yüklemelerin basitçe anlatımı için:
 
 *nix platformları herhangi bir uçbirimde:
