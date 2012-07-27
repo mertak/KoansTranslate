@@ -19,18 +19,18 @@ class AboutAsserts < EdgeCase::Koan
 
   # Gerçeği anlamak için, gerçeklik beklentilerimizi karşılaştırmalıyız.
   def test_assert_equality
-    beklenen_deger = __
-    gercek_deger = 1 + 1
+    expected_value = __
+    actual_value = 1 + 1
 
-    assert beklenen_deger == gercek_deger
+    assert expected_value == actual_value
   end
 
   # Eşitlik ortaya koymanın bazı yolları diğerlerinden daha iyi olabilir.
   def test_a_better_way_of_asserting_equality
-    beklenen_deger = __
-    gercek_deger = 1 + 1
+    expected_value = __
+    actual_value = 1 + 1
 
-    assert_equal beklenen_deger, gercek_deger
+    assert_equal expected_value, actual_value
   end
 
   # Bazen sizden değerler girmenizi isteyeceğiz.

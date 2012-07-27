@@ -51,7 +51,7 @@ class AboutObjects < EdgeCase::Koan
     nesne = Object.new
     kopya = nesne.clone
 
-    assert_equal __, nesne           != kopya
-    assert_equal __, nesne.object_id != kopya.object_id
+    assert_equal __, obj           != copy
+    assert_equal __, obj.object_id != copy.object_id
   end
 end

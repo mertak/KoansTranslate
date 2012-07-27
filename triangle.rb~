@@ -14,7 +14,7 @@
 #   about_triangle_project_2.rb
 # 
 def triangle(a, b, c)
-  # BURAYA KODU YAZ
+  # BU KODU YAZ
   #--
   a, b, c = [a, b, c].sort
   fail TriangleError if (a+b) <= c
