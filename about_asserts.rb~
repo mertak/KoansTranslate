@@ -9,7 +9,7 @@ class AboutAsserts < EdgeCase::Koan
   # Gerçekliğin kontrolü için doğruluk ya da yanlışlık üzerine 
   # "asserts" ile düşünmeliyiz.
   def test_assert_truth
-    assert false                # Burası <true> olmalıydı
+    assert false                # This should be true
   end
 
   # Uygun ifadeler kullanmanız kemale ermenizi kolaylaştırır.

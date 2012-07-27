@@ -4,7 +4,7 @@ class AboutScope < EdgeCase::Koan
   module Jims
     class Dog
       def identify
-        :canin_kopegi
+        :jimin_kopegi
       end
     end
   end
@@ -12,7 +12,7 @@ class AboutScope < EdgeCase::Koan
   module Joes
     class Dog
       def identify
-        :harunun_kopegi
+        :joenun_kopegi
       end
     end
   end

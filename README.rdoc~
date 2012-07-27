@@ -1,0 +1,164 @@
+= EdgeCase Ruby Koans
+
+Ruby Koans sizi aydınlatmak amacıyla yazılmış bir ruby öğrenim formudur .
+Maksat Ruby dilini, syntax, yapıları, ve bazı yaygın 
+fonksiyonları/kütüphaneleri öğrenmektir. Aynı zamanda sana kültürümüzü de öğreteceğiz. Testing is not just something we
+pay lip service to, but something we live.  It is essential in your quest to learn
+and do great things in the language.
+
+== The Structure
+
+The koans are broken out into areas by file, hashes are covered in about_hashes.rb,
+modules are introduced in about_modules.rb, etc.  They are presented in order in the
+path_to_enlightenment.rb file.
+
+Each koan builds up your knowledge of Ruby and builds upon itself.  It will stop at
+the first place you need to correct.
+
+Some koans simply need to have the correct answer substituted for an incorrect one.
+Some, however, require you to supply your own answer.  If you see the method +__+ (a
+double underscore) listed, it is a hint to you to supply your own code in order to
+make it work correctly.
+
+== Ruby yükleme
+
+Eğer Ruby kurulum dosyanız yoksa daha ayrıntılı yönlendirmeler için:
+ http://ruby-lang.org/en/downloads/ . Koans çalıştırmak için ruby ve rake'e ihtiyacın 
+olacak. Yüklemelerin basitçe anlatımı için:
+
+*nix platformları herhangi bir uçbirimde:
+
+   [~] $ ruby --version
+   [~] $ rake --version
+
+Windows komut satırında (cmd.exe)
+
+   c:\ruby --version
+   c:\rake --version
+
+Eğer kurulu halde rake'e sahip değilseniz 
+sadece şunu çalıştırın `gem install rake`
+
+Ruby'nin 1.8den daha büyük olan versiyonları uygundur (1.8.6
+yakınlarında veya daha yüksek). rake'in herhangi bir versiyonu olur.
+
+== Koans Yönetmek
+
+A fresh checkout will not include the koans, you will need to generate
+them.
+
+    [ruby_koans] $ rake gen                       # generates the koans directory
+
+If you need to regenerate the koans, thus wiping your current `koans`,
+
+    [ruby_koans] $ rake regen                     # regenerates the koans directory, wiping the original
+
+== The Path To Enlightenment
+
+You can run the tests through rake or by calling the file itself (rake is the
+recommended way to run them as we might build more functionality into this task).
+
+*nix platforms, from the koans directory
+
+    [ruby_koans] $ rake                           # runs the default target :walk_the_path
+    [ruby_koans] $ ruby path_to_enlightenment.rb  # simply call the file directly
+
+Windows da aynı şey
+
+    c:\ruby_koans\rake                             # varsayılan hedefi çalıştırır :walk_the_path
+    c:\ruby_koans\ruby path_to_enlightenment.rb    # basitçe dosyayı çağırdık
+
+=== Red, Green, Refactor
+
+In test-driven development the mantra has always been, red, green, refactor.  Write a
+failing test and run it (red), make the test pass (green), then refactor it (that is
+look at the code and see if you can make it any better).  In this case you will need
+to run the koan and see it fail (red), make the test pass (green), then take a
+moment and reflect upon the test to see what it is teaching you and improve the
+code to better communicate its intent (refactor).
+
+İlk çalıştırmanızda şöyle bir çıktı olmalı:
+
+    [ ruby_koans ] $ rake
+    (in /Users/person/dev/ruby_koans)
+    /usr/bin/ruby1.8 path_to_enlightenment.rb
+
+    AboutAsserts#test_assert_truth büyük günah işledin.
+
+    Üstad diyor ki:
+    Hala aydınlanmaya çalışıyorsun.  
+
+    Aradığın cevap bu olmalıydı:
+    <false> is not true.
+
+    Aşağıdaki kod üzerinde çalışmaya devam et:
+    ./about_asserts.rb:10:in `test_assert_truth'
+    path_to_enlightenment.rb:38:in `each_with_index'
+    path_to_enlightenment.rb:38
+
+    Aşılamayacak dağ yoktur.
+    your path thus far [X_________________________________________________] 0/280
+
+İlk aşamayı atladın. Eğer dikkat ettiysen sana ilk cevap için bir de yol gösterici
+var:
+
+    Aşağıdaki kod üzerinde çalışmaya devam et:
+    ./about_asserts.rb:10:in `test_assert_truth'
+    path_to_enlightenment.rb:38:in `each_with_index'
+    path_to_enlightenment.rb:38
+
+Bunun üzerine about_asserts.rb dosyasını açığ ilk testimize göz atıyoruz:
+
+  # Gerçekliğin kontrolü için doğruluk ya da yanlışlık üzerine 
+  # "asserts" ile düşünmeliyiz.
+  def test_assert_truth
+    assert false                # Burası <true> olmalıydı
+  end
+
+Daha sonra false'u true yapıp yeniden çalıştırıyoruz. Bunu yaptıktan sonra
+ne öğrendiğini düşün.  Burada metod ismi hariç her şeyi atla
+(+test_assert_truth+) metodun içindekiler de dahil (+end+den önceki
+her şey).
+
+In this case the goal is for you to see that if you pass a value to the +assert+
+method, it will either ensure it is +true+ and continue on, or fail if in fact
+the statement is +false+.
+
+== Inspiration
+
+Bu projeye ilham verdikleri için  Mike Clark ve Ara Howard'a özel teşekkürlerimiz
+sunarız.  Mike Clark Ruby testleri ile öğretme konusunda muhteşem bir blog
+gönderisi yayınladı. This sparked an idea that has taken a bit to
+solidify, that of bringing new rubyists into the community through
+testing. Ara Howard then gave us the idea for the Koans in his ruby
+quiz entry on Meta Koans (a must for any rubyist wanting to improve
+their skills).  Also, "The Little Lisper" taught us all the value of
+the short questions/simple answers style of learning.
+
+Mike Clark'ın gönderisi ::  http://www.clarkware.com/cgi/blosxom/2005/03/18
+Meta Koans        ::  http://rubyquiz.com/quiz67.html
+The Little Lisper ::  http://www.amazon.com/Little-LISPer-Third-Daniel-Friedman/dp/0023397632
+
+== Diğer Kaynaklar
+
+Ruby Dili               ::  http://ruby-lang.org
+Tarayıcınızda Ruby Deneyin        ::  http://tryruby.org
+
+Dave Thomas' introduction to Ruby Programming Ruby (the Pick Axe) ::  http://pragprog.com/titles/ruby/programming-ruby
+
+Brian Marick's fantastic guide for beginners Everyday Scripting with Ruby    ::  http://pragprog.com/titles/bmsft/everyday-scripting-with-ruby
+
+= Other stuff
+
+Author         :: Jim Weirich <jim@weirichhouse.org>
+Author         :: Joe O'Brien <joe@edgecase.com>
+Issue Tracker  :: http://www.pivotaltracker.com/projects/48111
+Requires       :: Ruby 1.8.x or later and Rake (any recent version)
+
+= License
+
+http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png
+
+RubyKoans is released under a Creative Commons,
+Attribution-NonCommercial-ShareAlike, Version 3.0
+(http://creativecommons.org/licenses/by-nc-sa/3.0/) License.
