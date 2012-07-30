@@ -35,7 +35,7 @@ class AboutExceptions < EdgeCase::Koan
     result = nil
     begin
       # 'raise' ve 'fail' eşanlamlıdır.
-      raise MySpecialError, "Mesajim"
+      raise MySpecialError, "Mesajım"
     rescue MySpecialError => ex
       sonuc = :hata_duzeltildi
     end

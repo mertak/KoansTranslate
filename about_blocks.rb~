@@ -62,7 +62,7 @@ class AboutBlocks < EdgeCase::Koan
 
   def test_block_can_affect_variables_in_the_code_where_they_are_created
     deger = :ilk_deger
-    method_with_block { deger = :blok_icinde_degisti }
+    method_with_block { deger = :blok_icinde_duzenlendi }
     assert_equal __, deger
   end
 

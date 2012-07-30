@@ -80,8 +80,8 @@ class AboutSymbols < EdgeCase::Koan
   end
 
   # Sembollerin "sabit dizgiler" olmadıklarını kavrayabilmek
-  # önemlidir ancak yine de sabittirler. Dizgilere özgü
-  # işlemlerin hiçbiri sembollerde mümkün değildir.
+  # önemlidir ancak yine de sabittirler. Dizgilerin ilginç
+  # işlemlerinden hiçbiri sembollerde mümkün değildir.
 
   def test_symbols_cannot_be_concatenated
     # Buradaki hatanın üzerinde daha sonra düşünülecek.

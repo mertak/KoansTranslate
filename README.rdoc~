@@ -2,23 +2,23 @@
 
 Ruby Koans sizi aydınlatmak amacıyla yazılmış bir ruby öğrenim formudur .
 Maksat Ruby dilini, syntax, yapıları, ve bazı yaygın 
-fonksiyonları/kütüphaneleri öğrenmektir. Aynı zamanda sana kültürümüzü de öğreteceğiz. Testing is not just something we
-pay lip service to, but something we live.  It is essential in your quest to learn
-and do great things in the language.
+fonksiyonları/kütüphaneleri öğrenmektir. Aynı zamanda sana kültürümüzü de öğreteceğiz. Bir şeyler denemek bizim için
+yalnızca sözde kavramlar değil bunu seviyoruz. Bu senin alacağın görevlerde de geçerli
+bu sayede bu dili kullanarak harikalar yaratabilirsin.
 
-== The Structure
+== Yapı
 
-The koans are broken out into areas by file, hashes are covered in about_hashes.rb,
-modules are introduced in about_modules.rb, etc.  They are presented in order in the
-path_to_enlightenment.rb file.
+Koan'ları dosyaların içlerine bölüştürdük, sözlükleri about_hashes.rb içine,
+modulleri about_modules.rb içine gizledik, vs. Sıralanışlarını path_to_enlightenment.rb 
+içinde görebilirsin.
 
-Each koan builds up your knowledge of Ruby and builds upon itself.  It will stop at
-the first place you need to correct.
+Her bir Koan senin Ruby bilgini ve kendini biraz daha genişletecektir. Düzeltmen
+gereken ilk yerde duracak.
 
-Some koans simply need to have the correct answer substituted for an incorrect one.
-Some, however, require you to supply your own answer.  If you see the method +__+ (a
-double underscore) listed, it is a hint to you to supply your own code in order to
-make it work correctly.
+Bazı koan'lar basitçe yanlışının yerine doğrusunun yazılmasını bekliyor .
+Bazılar ise senden kendi cevabını yazmanı.  Eğer bir yerde +__+ metodunu görürsen
+(iki alt-tire) , bu senin devam etmenin ancak kendi kodunu yazmanla mümkün olabileceğini
+gösteren bir ipucudur.
 
 == Ruby yükleme
 
@@ -44,26 +44,25 @@ yakınlarında veya daha yüksek). rake'in herhangi bir versiyonu olur.
 
 == Koans Yönetmek
 
-A fresh checkout will not include the koans, you will need to generate
-them.
+Yalnızca yüklemekle bitmiyor işler, yönlendirmeler de gerekli.
 
-    [ruby_koans] $ rake gen                       # generates the koans directory
+    [ruby_koans] $ rake gen                       # koans dizinine yönlendirir
 
-If you need to regenerate the koans, thus wiping your current `koans`,
+Yeniden yönlendirmeye ihtiyaç duyarsanız bu şimdiki 'koans'ınızı silecektir,
 
-    [ruby_koans] $ rake regen                     # regenerates the koans directory, wiping the original
+    [ruby_koans] $ rake regen                     # koans dizinine yeniden yönlendirir, orjinali siler
 
-== The Path To Enlightenment
+== Path To Enlightenment
 
-You can run the tests through rake or by calling the file itself (rake is the
-recommended way to run them as we might build more functionality into this task).
+Testleri rake ile ya da tek tek çalıştırarak deneyebilirsin.(bizim önerdiğimiz
+yol rake ile çalıştırmanız bu daha fonksiyonel olacaktır).
 
-*nix platforms, from the koans directory
+*nix platformları, koans dizininden
 
-    [ruby_koans] $ rake                           # runs the default target :walk_the_path
-    [ruby_koans] $ ruby path_to_enlightenment.rb  # simply call the file directly
+    [ruby_koans] $ rake                           # varsayılan hedefi çalıştırır :walk_the_path
+    [ruby_koans] $ ruby path_to_enlightenment.rb  # basitçe direkt olarak dosya açma
 
-Windows da aynı şey
+Windowsda da aynı şey
 
     c:\ruby_koans\rake                             # varsayılan hedefi çalıştırır :walk_the_path
     c:\ruby_koans\ruby path_to_enlightenment.rb    # basitçe dosyayı çağırdık
@@ -155,7 +154,7 @@ Author         :: Joe O'Brien <joe@edgecase.com>
 Issue Tracker  :: http://www.pivotaltracker.com/projects/48111
 Requires       :: Ruby 1.8.x or later and Rake (any recent version)
 
-= License
+= Lisans
 
 http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png
 

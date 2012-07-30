@@ -136,7 +136,7 @@ EOS
   end
 
   def test_you_can_get_a_substring_from_a_string
-    dizgi = "Pastirma, marul ve domates"
+    dizgig = "Pastirma, marul ve domates"
     assert_equal __, dizgi[7,3]
     assert_equal __, dizgi[7..9]
   end

@@ -45,7 +45,7 @@ class AboutSandwichCode < EdgeCase::Koan
   #
   # Çünkü sandviçin değişen kısmı sürekli ortadadır,
   # bahsedilen ekmek dilimlerini bir kütüphaneye soyutlamak 
-  # bir çok dilde zor bir olaydır.
+  # bir çok dilde zor bir olaydırç
   #
   # (C++ programcıları: The idiom of capturing allocated
   # pointers in a smart pointer constructor is an attempt to deal with
