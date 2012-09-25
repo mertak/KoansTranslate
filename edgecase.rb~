@@ -409,7 +409,7 @@ ENDTEXT
       self
     end
 
-    # Edge Case test paketleri için sınıf metodları.
+    # Edge Case test paketleri için sınıf methodları.
     class << self
       def inherited(subclass)
         subclasses << subclass

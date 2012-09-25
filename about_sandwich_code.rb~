@@ -80,7 +80,7 @@ class AboutSandwichCode < EdgeCase::Koan
 
   # ------------------------------------------------------------------
 
-  def find_line2(dosya_adi)
+  def find_line2(file_name)
     # find_line'ı, file_sandwich kütüphane fonksiyonlarıyla yeniden yaz.
   end
 
