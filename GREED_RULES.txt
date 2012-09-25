@@ -5,7 +5,7 @@ kullanılan bir oyundur.
 
 == Greed Oynamak
 
-Each player takes a turn consisting of one or more rolls of the dice.
+Her oyuncu bir veya daha fazla zardan oluşan elini oynar.
 Oyunun ilk elinde, bir oyuncu 5 zarı da atar ve aşağıdaki sisteme
 göre puan alır.
 
