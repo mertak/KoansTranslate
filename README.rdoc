@@ -132,8 +132,8 @@ gönderisi yayınladı. Bu fikrimizi biraz daha pekiştirmemize yol açtı,
 yeni Rubycileri topluluğumuza bu testler ile dahil edebilecektik.
 Ara Howard ruby quiz girisinde bize koans için Meta Koans(kendini geliştirmek isteyen her ruby programcısı için
 bir zorunluluktur) üzerindebir fikir verdi .
- Ayrıca, "The Little Lisper" bize kısa sorular/basit cevapların
-öğrenilme biçimi konusunda yol gösterdi.
+ Ayrıca, "The Little Lisper" bize kısa sorular/basit cevapların öğrenilme biçimi konusunda yol gösterdi.
+
 
 Mike Clark'ın gönderisi ::  http://www.clarkware.com/cgi/blosxom/2005/03/18
 Meta Koans        ::  http://rubyquiz.com/quiz67.html
